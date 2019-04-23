@@ -1,0 +1,22 @@
+cache:
+  yarn: true
+git:
+  depth: false
+language: node_js
+node_js:
+  - 10
+notifications:
+  email:
+    on_success: never
+
+addons:
+  sonarcloud:
+    organization: nerddan-github
+    token:
+      secure: $SONAR_TOKEN
+
+script:
+  - yarn lint
+  - yarn test
+  - yarn build
+  - sonar-scanner

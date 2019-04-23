@@ -1,0 +1,30 @@
+{
+  "name": "ln-crypto",
+  "version": "0.1.2",
+  "main": "dist/index.js",
+  "author": "Daniel Zhou <danichau93@gmail.com>",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "tslint -p .",
+    "test": "jest --coverage",
+    "build": "tsc -p tsconfig.lib.json"
+  },
+  "dependencies": {
+    "secp256k1": "^3.6.2",
+    "zbase32": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.7",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.4"
+  }
+}
