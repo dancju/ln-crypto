@@ -5,10 +5,11 @@
   "author": "Daniel Zhou <danichau93@gmail.com>",
   "license": "GPL-3.0",
   "engines": {
-    "node": ">= 8"
+    "node": ">= 10"
   },
   "files": [
-    "dist"
+    "dist/*.d.ts",
+    "dist/*.js"
   ],
   "scripts": {
     "lint": "tslint -p .",
@@ -16,15 +17,15 @@
     "build": "tsc -p tsconfig.lib.json"
   },
   "dependencies": {
-    "secp256k1": "^3.6.2",
-    "zbase32": "^0.0.2"
+    "secp256k1": "^3.0.0",
+    "zbase32": "^1.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.7",
-    "jest": "^24.7.1",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.16.0",
-    "typescript": "^3.4.4"
+    "@types/jest": "^25.0.0",
+    "@types/node": "^13.0.0",
+    "jest": "^25.0.0",
+    "ts-jest": "^25.0.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.0.0"
   }
 }
